@@ -13,11 +13,24 @@ public class Semaforo {
         }
     }
 
+    public String accionSemaforoSwitch(String color){
+     return switch (color){
+     case "rojo" ->"Para";
+     case "amarillo" ->"Atento";
+     case "verde" ->"Pasa";
+     default -> "Invalido";
+     
+     };
+       }
     public static void main(String[] args) {
-        Semaforo semaforo = new Semaforo();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce el color");
+        Semaforo semaforo = new Semaforo();
+        System.out.println("Introduce el color:");
         String color = sc.nextLine();
+        String resultado = semaforo.accionSemaforoIf(color);
+        String resultadoSwich= semaforo.accionSemaforoSwitch(color);
+        System.out.println(resultado);
+        System.out.println(resultadoSwich);
         sc.close();
         // Pedir color al usuario usando Scanner
         // Llamar a método accionSemaforoIf
@@ -27,3 +40,4 @@ public class Semaforo {
 
     }
 }
+
