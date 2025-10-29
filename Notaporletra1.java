@@ -18,8 +18,8 @@ public static void main(String[] args) {
 Scanner sc new Scanner(System.in);
 System.out.println("Dime tu nota");
 String valor = sc.nextLine();
-String resultadoSwich= semaforo.accionSemaforoSwitch(color);
-System.out.println(resultado);
+String nota= nota.notraLetra(color);
+System.out.println(notraLetra);
 System.out.println(resultadoSwich);
 sc.close();
 sc.close();
