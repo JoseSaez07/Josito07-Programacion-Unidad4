@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Notaporletra1 {
-public String nota(String notraLetra){
-return switch (notraLetra.toUpperCase()){
+public String nota(String notaLetra){
+return switch (notaLetra.toUpperCase()){
 case "A" -> "Notasobresaliente";
 case "B" -> "NotasobreNotable";
 case "C"->  "NotasobreBien";
@@ -15,13 +15,12 @@ default -> "Invalido";
 }
 
 public static void main(String[] args) {
-Scanner sc new Scanner(System.in);
+Notaporletra1 resultado = new Notaporletra1();
+Scanner sc = new Scanner(System.in);
 System.out.println("Dime tu nota");
 String valor = sc.nextLine();
-String nota= nota.notraLetra(color);
-System.out.println(notraLetra);
-System.out.println(resultadoSwich);
-sc.close();
+String resultado1= resultado.notaLetra(Notaporletra1);
+System.out.println(resultado1);
 sc.close();
 
 }
