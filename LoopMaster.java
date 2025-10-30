@@ -12,7 +12,11 @@ public class LoopMaster {
     }
 
     public static void imprimirTablaMultiplicar(int n) {
-
+    public static void imprimirTablaMultiplicar(int n){
+        for (int i = 1; i <= 10; i++){
+            System.out.printf("%d x %d = %d%n", i , n, i*n);
+            }
+    }
     }
 
     public static void main(String[] args) {
