@@ -1,31 +1,46 @@
 import java.util.Scanner;
 
 public class LoopMaster {
-    public static void contarHastaN(int n) {
-        for (int i = 0; i <= n; i++) {
+    public void contarHastaN(int n) {
+        System.out.println("");
+        for (int i = 1; i <= n; i++) {
+            System.out.print(i + " ");
         }
-
     }
 
-    public static void imprimirSumaHastaN(int n) {
-
+    public void imprimirSumaHastaN(int n) {
+        System.out.println("");
+        System.out.println("");
+        int total = 0;
+        for (int i = 1; i <= n; i++) {
+            total += i;
+        }
+        System.out.println(total);
     }
 
-    public static void imprimirTablaMultiplicar(int n) {
-    public static void imprimirTablaMultiplicar(int n){
-        for (int i = 1; i <= 10; i++){
-            System.out.printf("%d x %d = %d%n", i , n, i*n);
-            }
-    }
+    public void imprimirTablaMultiplicar(int n) {
+        System.out.println("");
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(n + " x " + i + " = " + (n * i));
+        }
     }
 
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println();
-        int numero = sc.nextInt();
-        contarHastaN(numero);
-        sc.close();
-
+        LoopMaster resultados = new LoopMaster();
+        System.out.println("Escriba un número mayor o igual a 1:");
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        do {
+            if (n >= 1) {
+                resultados.contarHastaN(n);
+                resultados.imprimirSumaHastaN(n);
+                resultados.imprimirTablaMultiplicar(n);
+                break;
+            } else {
+                System.out.println("Este número no es mayor o igual a 1, vuelve a ingresarlo:");
+                n = scanner.nextInt();
+            }
+        } while (n >= 1);
+        scanner.close();
     }
 }

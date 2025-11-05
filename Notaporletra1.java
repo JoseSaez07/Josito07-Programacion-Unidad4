@@ -19,7 +19,7 @@ Notaporletra1 resultado = new Notaporletra1();
 Scanner sc = new Scanner(System.in);
 System.out.println("Dime tu nota");
 String valor = sc.nextLine();
-String resultado1= resultado.notaLetra(Notaporletra1);
+String resultado1= resultado.nota(valor);
 System.out.println(resultado1);
 sc.close();
 
