@@ -3,22 +3,15 @@ import java.util.Scanner;
 public class AdivinaElNumero {
 public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
+final  int MAX = 100;
+final  int Min = 0;
+    public static void secret() {
+        int tries = 0;
+    }
 
-while (true) {
-try{
-System.out.println("Tu intento");
-int valor = sc.nextInt();
-Integer resultado =  Integer.parseInt(valor);
-}
-catch (Exception e) {
-
-
-
-
+    }
 
 
 }
 
-}
-}
-}
+
