@@ -10,7 +10,7 @@ public class Semaforo {
             return "pasa";
         } else {
             return "invalido";
-        }
+        } 
     }
 
     public String accionSemaforoSwitch(String color){
