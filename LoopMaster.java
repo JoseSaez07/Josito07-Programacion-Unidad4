@@ -20,7 +20,7 @@ public class LoopMaster {
 
     public void imprimirTablaMultiplicar(int n) {
         System.out.println("");
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 0; i <= 1; i++) {
             System.out.println(n + " x " + i + " = " + (n * i));
         }
     }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ParOimpar {
-<<<<<<< HEAD
+
     public String numeroA(int numero) {
         boolean esPar = (numero % 2 == 0);
         boolean esMultiplode3 = (numero % 3 == 0);
@@ -13,7 +13,8 @@ public class ParOimpar {
             return "Es par";
         } else {
             return "Es impar";
-=======
+        
+
     public String parOimparOmultiplode(int valor) {
         boolean esPar = (valor % 2 == 0);
         boolean esMultiplode3 = (valor % 3 == 0);
@@ -28,12 +29,10 @@ public class ParOimpar {
         } else {
             return "Es impar";
 
->>>>>>> 3ca859070681c4d9fc59eaef5ce488ef9bbccc38
         }
     }
 
     public static void main(String[] args) {
-<<<<<<< HEAD
         ParOimpar prueba = new ParOimpar();
         Scanner sc = new Scanner(System.in);
         System.out.print("Dime un numero: ");
@@ -44,7 +43,7 @@ public class ParOimpar {
 
     }
 }
-=======
+
         ParOimpar programa = new ParOimpar();
         Scanner sc = new Scanner(System.in);
         System.out.print("Dime un numero: ");
@@ -54,4 +53,4 @@ public class ParOimpar {
         sc.close();
     }
 }
->>>>>>> 3ca859070681c4d9fc59eaef5ce488ef9bbccc38
+
